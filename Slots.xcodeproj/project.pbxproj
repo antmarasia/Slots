@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92B3AA5A2637612B00F2E149 /* SlotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3AA592637612B00F2E149 /* SlotsApp.swift */; };
-		92B3AA5C2637612B00F2E149 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3AA5B2637612B00F2E149 /* ContentView.swift */; };
+		92B3AA5C2637612B00F2E149 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3AA5B2637612B00F2E149 /* GameView.swift */; };
 		92B3AA5E2637612D00F2E149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3AA5D2637612D00F2E149 /* Assets.xcassets */; };
 		92B3AA612637612D00F2E149 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3AA602637612D00F2E149 /* Preview Assets.xcassets */; };
 		92B3AA6C2637612D00F2E149 /* SlotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3AA6B2637612D00F2E149 /* SlotsTests.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		92B3AA562637612B00F2E149 /* Slots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B3AA592637612B00F2E149 /* SlotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsApp.swift; sourceTree = "<group>"; };
-		92B3AA5B2637612B00F2E149 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92B3AA5B2637612B00F2E149 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		92B3AA5D2637612D00F2E149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B3AA602637612D00F2E149 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92B3AA622637612D00F2E149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				92B3AA592637612B00F2E149 /* SlotsApp.swift */,
-				92B3AA5B2637612B00F2E149 /* ContentView.swift */,
+				92B3AA5B2637612B00F2E149 /* GameView.swift */,
 				92B3AA5D2637612D00F2E149 /* Assets.xcassets */,
 				92B3AA622637612D00F2E149 /* Info.plist */,
 				92B3AA5F2637612D00F2E149 /* Preview Content */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B3AA5C2637612B00F2E149 /* ContentView.swift in Sources */,
+				92B3AA5C2637612B00F2E149 /* GameView.swift in Sources */,
 				92B3AA5A2637612B00F2E149 /* SlotsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

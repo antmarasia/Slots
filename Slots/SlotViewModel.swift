@@ -15,9 +15,9 @@ final class SlotViewModel : ObservableObject {
     @Published private(set) var slot2 = "apple"
     @Published private(set) var slot3 = "apple"
     @Published private(set) var credits = 1000
+    @Published var winCount : Int = 0
     
     public func spin() {
-        print("Spinning")
         if credits <= 0 {
             return
         }
@@ -38,6 +38,7 @@ final class SlotViewModel : ObservableObject {
     private func checkScore() {
         if slot1 == slot2 && slot1 == slot3 {
             credits += 5
+            winCount += 1
         } else {
             credits -= 5
         }

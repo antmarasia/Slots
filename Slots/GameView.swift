@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct GameView: View {
     
@@ -17,7 +18,10 @@ struct GameView: View {
                 .font(.largeTitle)
                 .padding(.top, 20)
             Spacer()
-            Text("Credits: \(slotViewModel.credits)")
+            ZStack {
+                Text("Credits: \(slotViewModel.credits)")
+                ConfettiCannon(counter: $slotViewModel.winCount)
+            }
             Spacer()
             HStack {
                 Spacer()
@@ -38,7 +42,7 @@ struct GameView: View {
             Button("Spin") {
                 slotViewModel.spin()
             }
-            .frame(width: 100.0, height: 40.0)
+            .frame(width: 150.0, height: 60.0)
             .background(Color.pink)
             .foregroundColor(.white)
             .cornerRadius(50)

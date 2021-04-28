@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9216049A2639F25700907E85 /* SlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921604992639F25700907E85 /* SlotViewModel.swift */; };
+		9216049D2639FB7500907E85 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9216049C2639FB7500907E85 /* ConfettiSwiftUI */; };
+		9216049E2639FB7500907E85 /* ConfettiSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 9216049C2639FB7500907E85 /* ConfettiSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		92B3AA5A2637612B00F2E149 /* SlotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3AA592637612B00F2E149 /* SlotsApp.swift */; };
 		92B3AA5C2637612B00F2E149 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3AA5B2637612B00F2E149 /* GameView.swift */; };
 		92B3AA5E2637612D00F2E149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3AA5D2637612D00F2E149 /* Assets.xcassets */; };
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9216049F2639FB7500907E85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9216049E2639FB7500907E85 /* ConfettiSwiftUI in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		921604992639F25700907E85 /* SlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotViewModel.swift; sourceTree = "<group>"; };
 		92B3AA562637612B00F2E149 /* Slots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slots.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9216049D2639FB7500907E85 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,12 +160,16 @@
 				92B3AA522637612B00F2E149 /* Sources */,
 				92B3AA532637612B00F2E149 /* Frameworks */,
 				92B3AA542637612B00F2E149 /* Resources */,
+				9216049F2639FB7500907E85 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Slots;
+			packageProductDependencies = (
+				9216049C2639FB7500907E85 /* ConfettiSwiftUI */,
+			);
 			productName = Slots;
 			productReference = 92B3AA562637612B00F2E149 /* Slots.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 92B3AA4D2637612B00F2E149;
+			packageReferences = (
+				9216049B2639FB7500907E85 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 92B3AA572637612B00F2E149 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -584,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9216049B2639FB7500907E85 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9216049C2639FB7500907E85 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9216049B2639FB7500907E85 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92B3AA4E2637612B00F2E149 /* Project object */;
 }
